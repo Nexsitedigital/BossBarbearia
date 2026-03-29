@@ -327,4 +327,4 @@
                 </div>
 
                 <div class="text-center group">
-                    <div class="w-32 h-32 mx-auto bg-gradient-to-br from-boss-gold to-yellow
+                    <div class="w-32 h-32 mx-auto bg-gradient-to-br from-boss-gold to-yellow>
