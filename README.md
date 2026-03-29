@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss Barbearia | Social Club - Patos PB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'oswald': ['Oswald', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        'boss-black': '#0a0a0a',
+                        'boss-gray': '#1a1a1a',
+                        'boss-gold': '#d4af37',
+                        'boss-silver': '#c0c0c0',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in { animation: fadeIn 0.8s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .slide-in { animation: slideIn 0.6s ease-out; }
+        @keyframes slideIn { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+        .gold-gradient { background: linear-gradient(135deg, #d4af37 0%, #f4e5c2 50%, #d4af37 100%); }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.05); }
+        .glass-effect { background: rgba(26, 26, 26, 0.9); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-boss-black text-white font-roboto overflow-x-hidden">
+
+    <!-- Navegação -->
+    <nav class="fixed w-full z-50 glass-effect border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="https://i.postimg.cc/HkqZfnMz/boss.png" alt="Boss Barbearia" class="h-32 w-auto">
+                <div class="hidden md:block">
+                    <h1 class="font-oswald text-2xl font-bold tracking-wider">BOSS <span class="text-boss-gold">BARBEARIA</span></h1>
+                    <p class="text-xs text-gray-400 tracking-widest">SOCIAL CLUB</p>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#inicio" class="hover:text-boss-gold transition-colors font-medium">Início</a>
+                <a href="#servicos" class="hover:text-boss-gold transition-colors font-medium">Serviços</a>
+                <a href="#agendamento" class="hover:text-boss-gold transition-colors font-medium">Agendar</a>
+                <a href="#equipe" class="hover:text-boss-gold transition-colors font-medium">Equipe</a>
+                <a href="#galeria" class="hover:text-boss-gold transition-colors font-medium">Galeria</a>
+                <a href="#contato" class="hover:text-boss-gold transition-colors font-medium">Contato</a>
+            </div>
+
+            <button onclick="toggleMenu()" class="md:hidden text-2xl text-boss-gold">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-boss-gray border-t border-gray-700">
+            <div class="flex flex-col p-6 gap-4">
+                <a href="#inicio" class="hover:text-boss-gold transition-colors" onclick="toggleMenu()">Início</a>
+                <a href="#servicos" class="hover:text-boss-gold transition-colors" onclick="toggleMenu()">Serviços</a>
+                <a href="#agendamento" class="hover:text-boss-gold transition-colors" onclick="toggleMenu()">Agendar</a>
+                <a href="#equipe" class="hover:text-boss-gold transition-colors" onclick="toggleMenu()">Equipe</a>
+                <a href="#contato" class="hover:text-boss-gold transition-colors" onclick="toggleMenu()">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-boss-black/80 via-boss-black/60 to-boss-black z-10"></div>
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1920&h=1080&fit=crop" alt="Barbearia" class="w-full h-full object-cover opacity-40">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-20 text-center">
+            <div class="fade-in">
+                <img src="https://i.postimg.cc/HkqZfnMz/boss.png" alt="Logo Boss Barbearia" class="mx-auto h-50 md:h-48 mb-6 drop-shadow-2xl">
+                <h2 class="font-oswald text-5xl md:text-7xl font-bold mb-4 tracking-tight">
+                    ELEGÂNCIA & <span class="text-transparent bg-clip-text gold-gradient">ESTILO</span>
+                </h2>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    A experiência definitiva em cuidados masculinos em Patos - PB
+                </p>
+                
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
+                    <div class="flex items-center gap-2 text-boss-gold">
+                        <i class="fas fa-star text-2xl"></i>
+                        <span class="text-2xl font-bold">4.9</span>
+                        <span class="text-gray-400">(84 avaliações)</span>
+                    </div>
+                    <div class="hidden md:block w-px h-8 bg-gray-600"></div>
+                    <div class="flex items-center gap-2 text-green-400">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Aberto Seg-Sáb: 9h às 20h</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#agendamento" class="bg-boss-gold text-black font-oswald font-bold text-lg px-8 py-4 rounded hover-scale inline-flex items-center justify-center gap-2">
+                        <i class="fas fa-calendar-alt"></i>
+                        AGENDAR HORÁRIO
+                    </a>
+                    <a href="https://wa.me/5583998159090" target="_blank" class="border-2 border-boss-gold text-boss-gold font-oswald font-bold text-lg px-8 py-4 rounded hover:bg-boss-gold hover:text-black transition-all inline-flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp"></i>
+                        WHATSAPP
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-3xl text-boss-gold"></i>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-20 bg-boss-gray">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="font-oswald text-4xl md:text-5xl font-bold mb-4">NOSSOS <span class="text-boss-gold">SERVIÇOS</span></h3>
+                <div class="w-24 h-1 bg-boss-gold mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Corte -->
+                <div class="bg-boss-black p-6 rounded-lg border border-gray-800 hover:border-boss-gold transition-all hover-scale group">
+                    <div class="text-boss-gold text-4xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h4 class="font-oswald text-xl font-bold mb-2">Corte de Cabelo</h4>
+                    <p class="text-gray-400 text-sm">Corte tradicional, degradê, tesoura ou navalha. Personalizado ao seu estilo.</p>
+                </div>
+
+                <!-- Barba -->
+                <div class="bg-boss-black p-6 rounded-lg border border-gray-800 hover:border-boss-gold transition-all hover-scale group">
+                    <div class="text-boss-gold text-4xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h4 class="font-oswald text-xl font-bold mb-2">Barba & Navalha</h4>
+                    <p class="text-gray-400 text-sm">Aparar, modelar ou barba completa com toalha quente e navalha.</p>
+                </div>
+
+                <!-- Tratamentos -->
+                <div class="bg-boss-black p-6 rounded-lg border border-gray-800 hover:border-boss-gold transition-all hover-scale group">
+                    <div class="text-boss-gold text-4xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h4 class="font-oswald text-xl font-bold mb-2">Barbaterapia</h4>
+                    <p class="text-gray-400 text-sm">Tratamento completo com vapor de ozônio, hidratação e relaxamento.</p>
+                </div>
+
+                <!-- Coloração -->
+                <div class="bg-boss-black p-6 rounded-lg border border-gray-800 hover:border-boss-gold transition-all hover-scale group">
+                    <div class="text-boss-gold text-4xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h4 class="font-oswald text-xl font-bold mb-2">Coloração</h4>
+                    <p class="text-gray-400 text-sm">Coloração de cabelo e barba, tingimento e camuflagem de brancos.</p>
+                </div>
+
+                <!-- Infantis -->
+                <div class="bg-boss-black p-6 rounded-lg border border-gray-800 hover:border-boss-gold transition-all hover-scale group">
+                    <div class="text-boss-gold text-4xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h4 class="font-oswald text-xl font-bold mb-2">Corte Infantil</h4>
+                    <p class="text-gray-400 text-sm">Espaço kids com cadeira temática carro, especializado em crianças.</p>
+                </div>
+
+                <!-- Estética -->
+                <div class="bg-boss-black p-6 rounded-lg border border-gray-800 hover:border-boss-gold transition-all hover-scale group">
+                    <div class="text-boss-gold text-4xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h4 class="font-oswald text-xl font-bold mb-2">Sobrancelhas</h4>
+                    <p class="text-gray-400 text-sm">Design e depilação de sobrancelhas, coloração e alinhamento.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-gray-400 mb-4">E muito mais: Alisamentos, tratamentos capilares, penteados afro, depilação com cera...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section id="agendamento" class="py-20 bg-boss-black relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-boss-gold/5 to-transparent"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="font-oswald text-4xl md:text-5xl font-bold mb-6">
+                        AGENDE SEU <span class="text-boss-gold">HORÁRIO</span>
+                    </h3>
+                    <p class="text-gray-300 mb-8 text-lg">
+                        Escolha o profissional, serviço e horário de sua preferência. 
+                        Receba confirmação imediata pelo WhatsApp.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-boss-gold/20 flex items-center justify-center text-boss-gold">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold">Horário Flexível</h5>
+                                <p class="text-gray-400 text-sm">Segunda a Sábado das 9h às 20h</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-boss-gold/20 flex items-center justify-center text-boss-gold">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold">Pagamento Fácil</h5>
+                                <p class="text-gray-400 text-sm">Cartão, PIX, NFC e dinheiro</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-boss-gold/20 flex items-center justify-center text-boss-gold">
+                                <i class="fas fa-wheelchair"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold">Acessibilidade</h5>
+                                <p class="text-gray-400 text-sm">Entrada adaptada para cadeirantes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-boss-gray p-8 rounded-2xl border border-gray-700 shadow-2xl">
+                    <form id="agendamentoForm" class="space-y-4" onsubmit="enviarAgendamento(event)">
+                        <div>
+                            <label class="block text-sm font-medium mb-2 text-gray-300">Seu Nome</label>
+                            <input type="text" id="nome" required class="w-full bg-boss-black border border-gray-700 rounded-lg px-4 py-3 focus:border-boss-gold focus:outline-none transition-colors" placeholder="Digite seu nome completo">
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium mb-2 text-gray-300">Data</label>
+                                <input type="date" id="data" required class="w-full bg-boss-black border border-gray-700 rounded-lg px-4 py-3 focus:border-boss-gold focus:outline-none transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2 text-gray-300">Horário</label>
+                                <select id="horario" required class="w-full bg-boss-black border border-gray-700 rounded-lg px-4 py-3 focus:border-boss-gold focus:outline-none transition-colors">
+                                    <option value="">Selecione</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-2 text-gray-300">Profissional</label>
+                            <select id="profissional" required class="w-full bg-boss-black border border-gray-700 rounded-lg px-4 py-3 focus:border-boss-gold focus:outline-none transition-colors">
+                                <option value="">Qualquer profissional</option>
+                                <option value="Caio">Caio Chaves</option>
+                                <option value="Silvino">Silvino</option>
+                                <option value="Andrey">Andrey</option>
+                                <option value="Matheus">Matheus</option>
+                                <option value="Nathan">Nathan</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-2 text-gray-300">Serviço</label>
+                            <select id="servico" required class="w-full bg-boss-black border border-gray-700 rounded-lg px-4 py-3 focus:border-boss-gold focus:outline-none transition-colors">
+                                <option value="">Selecione o serviço</option>
+                                <option value="Corte">Corte de Cabelo</option>
+                                <option value="Barba">Barba</option>
+                                <option value="Corte+Barba">Corte + Barba</option>
+                                <option value="Degrade">Degradê</option>
+                                <option value="Infantil">Corte Infantil</option>
+                                <option value="Tratamento">Barbaterapia</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-2 text-gray-300">Telefone (WhatsApp)</label>
+                            <input type="tel" id="telefone" required class="w-full bg-boss-black border border-gray-700 rounded-lg px-4 py-3 focus:border-boss-gold focus:outline-none transition-colors" placeholder="(83) 9XXXX-XXXX">
+                        </div>
+
+                        <button type="submit" class="w-full bg-boss-gold text-black font-oswald font-bold text-lg py-4 rounded-lg hover:bg-yellow-500 transition-colors flex items-center justify-center gap-2 mt-6">
+                            <i class="fab fa-whatsapp"></i>
+                            CONFIRMAR AGENDAMENTO
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipe -->
+    <section id="equipe" class="py-20 bg-boss-gray">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="font-oswald text-4xl md:text-5xl font-bold mb-4">NOSSA <span class="text-boss-gold">EQUIPE</span></h3>
+                <p class="text-gray-400 max-w-2xl mx-auto">Profissionais especializados prontos para cuidar do seu visual</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div class="text-center group">
+                    <div class="w-32 h-32 mx-auto bg-gradient-to-br from-boss-gold to-yellow-600 rounded-full p-1 mb-4 group-hover:scale-110 transition-transform">
+                        <div class="w-full h-full bg-boss-gray rounded-full flex items-center justify-center overflow-hidden">
+                            <i class="fas fa-user text-4xl text-gray-600"></i>
+                        </div>
+                    </div>
+                    <h4 class="font-oswald font-bold text-lg">Caio Chaves</h4>
+                    <p class="text-boss-gold text-sm">Especialista</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="w-32 h-32 mx-auto bg-gradient-to-br from-boss-gold to-yellow
