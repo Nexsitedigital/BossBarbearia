@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -545,7 +545,7 @@
     <!-- Footer -->
     <footer class="bg-black border-t border-gray-800 py-8">
         <div class="container mx-auto px-6 text-center">
-            <img src="https://i.postimg.cc/HkqZfnMz/boss.png" alt="Logo" class="h-16 mx-auto mb-4 opacity-80 logo-transparent">
+            <img src="[![boss.png](https://i.postimg.cc/HkqZfnMz/boss.png)](https://postimg.cc/PCMQDt2v)" alt="Logo" class="h-16 mx-auto mb-4 opacity-80 logo-transparent">
             <p class="text-gray-500 text-sm mb-2">© 2026 Boss Barbearia - Social Club. Todos os direitos reservados.</p>
             <p class="text-gray-600 text-xs">Desenvolvido para excelência em cuidados masculinos</p>
         </div>
