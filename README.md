@@ -84,8 +84,8 @@
 
         <div class="container mx-auto px-6 relative z-20 text-center">
             <div class="fade-in">
-                <img src="https://i.postimg.cc/HkqZfnMz/boss.png" alt="Logo Boss Barbearia" class="mx-auto h-50 md:h-48 mb-6 drop-shadow-2xl">
-                <h2 class="font-oswald text-5xl md:text-7xl font-bold mb-4 tracking-tight">
+                <img src="https://i.postimg.cc/HkqZfnMz/boss.png" alt="Logo Boss Barbearia" class="mx-auto w-full max-w-[280px] md:max-w-[350px] h-auto mb-6 drop-shadow-2xl mix-blend-lighten bg-transparent">
+                  <h2 class="font-oswald text-5xl md:text-7xl font-bold mb-4 tracking-tight">
                     ELEGÂNCIA & <span class="text-transparent bg-clip-text gold-gradient">ESTILO</span>
                 </h2>
                 <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
