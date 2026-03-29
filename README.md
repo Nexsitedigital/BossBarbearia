@@ -42,7 +42,7 @@
     <nav class="fixed w-full z-50 glass-effect border-b border-gray-800">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <img src="https://i.postimg.cc/HkqZfnMz/boss.png" alt="Boss Barbearia" class="h-32 w-auto">
+                <img src="https://i.postimg.cc/HkqZfnMz/boss.png" alt="Boss Barbearia" class="h-12 md:h-16 w-auto object-contain">
                 <div class="hidden md:block">
                     <h1 class="font-oswald text-2xl font-bold tracking-wider">BOSS <span class="text-boss-gold">BARBEARIA</span></h1>
                     <p class="text-xs text-gray-400 tracking-widest">SOCIAL CLUB</p>
