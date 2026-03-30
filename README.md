@@ -116,19 +116,6 @@
         </div>
     </nav>
     
-       
-            <div class="hidden md:flex items-center gap-6 text-sm">
-                <a href="#inicio" class="hover:text-boss-gold transition-colors font-medium">Início</a>
-                <a href="#servicos" class="hover:text-boss-gold transition-colors font-medium">Serviços</a>
-                <a href="#agendamento" class="hover:text-boss-gold transition-colors font-medium">Agendar</a>
-                <a href="#equipe" class="hover:text-boss-gold transition-colors font-medium">Equipe</a>
-                <a href="#galeria" class="hover:text-boss-gold transition-colors font-medium">Galeria</a>
-                <a href="#contato" class="hover:text-boss-gold transition-colors font-medium">Contato</a>
-            </div>
-
-            <button onclick="toggleMenu()" class="md:hidden text-2xl text-boss-gold p-2 focus:outline-none">
-                <i class="fas fa-bars"></i>
-            </button>
         </div>
 
         <div class="container mx-auto px-6 relative z-20 text-center">
