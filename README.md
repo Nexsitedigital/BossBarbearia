@@ -77,7 +77,7 @@
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <div class="flex items-center gap-3">
                 <div class="logo-container">
-                    <img src="https://i.postimg.cc/HkqZfnMz/boss.png" alt="Boss Barbearia" class="h-30 md:h-14 w-auto logo-img" style="#: none;">
+                    <img src="https://i.postimg.cc/HkqZfnMz/boss.png" alt="Boss Barbearia" class="h-22 md:h-14 w-auto logo-img" style="#: none;">
                 </div>
                 <div class="hidden md:block">
                     <h1 class="font-oswald text-xl font-bold tracking-wider text-white">BOSS <span class="text-boss-gold">BARBEARIA</span></h1>
