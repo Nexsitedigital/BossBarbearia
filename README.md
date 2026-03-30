@@ -113,7 +113,6 @@
                 <a href="#galeria" class="text-white hover:text-boss-gold transition-colors py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Galeria</a>
                 <a href="#contato" class="text-white hover:text-boss-gold transition-colors py-3 px-4" onclick="toggleMenu()">Contato</a>
             </div>
-        </div>
     </nav>
     
         </div>
