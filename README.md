@@ -79,65 +79,40 @@
 
     <!-- Navegação -->
         <nav class="fixed w-full z-50 glass-effect border-b border-gray-800 top-0">
+            <nav class="fixed w-full z-50 glass-effect border-b border-gray-800 top-0">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="logo-container">
-                    <img src="https://i.postimg.cc/HkqZfnMz/boss.png" alt="Boss Barbearia" class="h-14 md:h-20 w-auto logo-img logo-gold-filter" style="background: none;">
-                </div>
-                <div class="hidden md:block">
+            <div class="flex items-center">
+                <img src="https://i.postimg.cc/HkqZfnMz/boss.png" 
+                     alt="Boss Barbearia" 
+                     class="h-14 md:h-20 w-auto" 
+                     style="filter: brightness(0) saturate(100%) invert(72%) sepia(55%) saturate(450%) hue-rotate(3deg) brightness(92%) contrast(88%);">
+                
+                <div class="hidden md:block ml-4">
                     <h1 class="font-oswald text-xl font-bold tracking-wider text-white">BOSS <span class="text-boss-gold">BARBEARIA</span></h1>
                     <p class="text-[10px] text-gray-400 tracking-[0.2em]">SOCIAL CLUB</p>
                 </div>
             </div>
             
-            <div class="hidden md:flex items-center gap-6 text-sm">
-                <a href="#inicio" class="hover:text-boss-gold transition-colors font-medium text-white">Início</a>
-                <a href="#servicos" class="hover:text-boss-gold transition-colors font-medium text-white">Serviços</a>
-                <a href="#agendamento" class="hover:text-boss-gold transition-colors font-medium text-white">Agendar</a>
-                <a href="#equipe" class="hover:text-boss-gold transition-colors font-medium text-white">Equipe</a>
-                <a href="#galeria" class="hover:text-boss-gold transition-colors font-medium text-white">Galeria</a>
-                <a href="#contato" class="hover:text-boss-gold transition-colors font-medium text-white">Contato</a>
-            </div>
-
-            <button onclick="toggleMenu()" class="md:hidden text-2xl text-boss-gold p-2 focus:outline-none">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-boss-gray border-t border-gray-700 absolute w-full left-0">
-            <div class="flex flex-col p-4 gap-1">
-                <a href="#inicio" class="text-white hover:text-boss-gold transition-colors py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Início</a>
-                <a href="#servicos" class="text-white hover:text-boss-gold transition-colors py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Serviços</a>
-                <a href="#agendamento" class="text-white hover:text-boss-gold transition-colors py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Agendar</a>
-                <a href="#equipe" class="text-white hover:text-boss-gold transition-colors py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Equipe</a>
-                <a href="#galeria" class="text-white hover:text-boss-gold transition-colors py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Galeria</a>
-                <a href="#contato" class="text-white hover:text-boss-gold transition-colors py-3 px-4" onclick="toggleMenu()">Contato</a>
-            </div>
-    
-       
-            <div class="hidden md:flex items-center gap-6 text-sm">
+            <div class="hidden md:flex items-center gap-6 text-sm text-white">
                 <a href="#inicio" class="hover:text-boss-gold transition-colors font-medium">Início</a>
                 <a href="#servicos" class="hover:text-boss-gold transition-colors font-medium">Serviços</a>
                 <a href="#agendamento" class="hover:text-boss-gold transition-colors font-medium">Agendar</a>
                 <a href="#equipe" class="hover:text-boss-gold transition-colors font-medium">Equipe</a>
-                <a href="#galeria" class="hover:text-boss-gold transition-colors font-medium">Galeria</a>
                 <a href="#contato" class="hover:text-boss-gold transition-colors font-medium">Contato</a>
             </div>
 
-            <button onclick="toggleMenu()" class="md:hidden text-2xl text-boss-gold p-2 focus:outline-none">
+            <button onclick="toggleMenu()" class="md:hidden text-2xl text-boss-gold p-2">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
 
-        <!-- Menu Mobile -->
         <div id="mobile-menu" class="hidden md:hidden bg-boss-gray border-t border-gray-700 absolute w-full left-0">
-            <div class="flex flex-col p-4 gap-1">
-                <a href="#inicio" class="hover:text-boss-gold transition-colors py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Início</a>
-                <a href="#servicos" class="hover:text-boss-gold transition-colors py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Serviços</a>
-                <a href="#agendamento" class="hover:text-boss-gold transition-colors py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Agendar</a>
-                <a href="#equipe" class="hover:text-boss-gold transition-colors py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Equipe</a>
-                <a href="#galeria" class="hover:text-boss-gold transition-colors py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Galeria</a>
-                <a href="#contato" class="hover:text-boss-gold transition-colors py-3 px-4" onclick="toggleMenu()">Contato</a>
+            <div class="flex flex-col p-4">
+                <a href="#inicio" class="text-white py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Início</a>
+                <a href="#servicos" class="text-white py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Serviços</a>
+                <a href="#agendamento" class="text-white py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Agendar</a>
+                <a href="#equipe" class="text-white py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Equipe</a>
+                <a href="#contato" class="text-white py-3 px-4" onclick="toggleMenu()">Contato</a>
             </div>
         </div>
     </nav>
