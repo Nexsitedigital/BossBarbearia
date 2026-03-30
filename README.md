@@ -131,26 +131,6 @@
             </button>
         </div>
 
-        <!-- Menu Mobile -->
-        <div id="mobile-menu" class="hidden md:hidden bg-boss-gray border-t border-gray-700 absolute w-full left-0">
-            <div class="flex flex-col p-4 gap-1">
-                <a href="#inicio" class="hover:text-boss-gold transition-colors py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Início</a>
-                <a href="#servicos" class="hover:text-boss-gold transition-colors py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Serviços</a>
-                <a href="#agendamento" class="hover:text-boss-gold transition-colors py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Agendar</a>
-                <a href="#equipe" class="hover:text-boss-gold transition-colors py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Equipe</a>
-                <a href="#galeria" class="hover:text-boss-gold transition-colors py-3 px-4 border-b border-gray-800" onclick="toggleMenu()">Galeria</a>
-                <a href="#contato" class="hover:text-boss-gold transition-colors py-3 px-4" onclick="toggleMenu()">Contato</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="inicio" class="relative min-h-[90vh] flex items-center justify-center pt-20 overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <div class="absolute inset-0 bg-gradient-to-b from-boss-black via-boss-black/80 to-boss-black z-10"></div>
-            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1920&h=1080&fit=crop" alt="Barbearia" class="w-full h-full object-cover opacity-20">
-        </div>
-
         <div class="container mx-auto px-6 relative z-20 text-center">
             <!-- Logo Grande -->
             <div class="mb-6 logo-container flex justify-center">
