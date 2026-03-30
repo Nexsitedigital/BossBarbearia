@@ -68,6 +68,11 @@
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #0a0a0a; }
         ::-webkit-scrollbar-thumb { background: #d4af37; border-radius: 4px; }
+    /* Filtro para deixar a logo preta com cor dourada */
+     .logo-gold-filter {
+    filter: invert(72%) sepia(55%) saturate(450%) hue-rotate(3deg) brightness(92%) contrast(88%);
+}
+
     </style>
 </head>
 <body class="bg-boss-black text-white font-roboto overflow-x-hidden">
