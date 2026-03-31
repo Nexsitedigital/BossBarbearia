@@ -82,7 +82,7 @@
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <div class="flex items-center gap-3">
                 <div class="logo-container">
-                    <img src="https://i.postimg.cc/HkqZfnMz/boss.png" alt="Boss Barbearia" class="h-14 md:h-20 w-auto logo-img logo-gold-filter" style="background: none;">
+                    alt="Boss Barbearia" class="h-14 md:h-20 w-auto logo-img logo-gold-filter" style="background: none;">
                 </div>
                 <div class="hidden md:block">
                     <h1 class="font-oswald text-xl font-bold tracking-wider text-white">BOSS <span class="text-boss-gold">BARBEARIA</span></h1>
@@ -545,5 +545,5 @@
 
         document.getElementById('data').min = new Date().toISOString().split('T')[0];
     </script>
-</body>
-</html>
+      </body>
+      </html>
