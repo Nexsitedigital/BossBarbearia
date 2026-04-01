@@ -160,6 +160,7 @@
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <i class="fas fa-chevron-down text-2xl text-boss-gold"></i>
         </div>
+        <section>
     
 
     <!-- Serviços -->
