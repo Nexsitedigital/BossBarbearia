@@ -76,37 +76,34 @@
     </head>
     <body class="bg-boss-black text-white font-roboto overflow-x-hidden">
     
-      <nav class="fixed w-full z-50 glass-effect border-b border-gray-800 top-0">
-    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-        <div class="flex items-center gap-3 h-10"> 
-            <div class="relative w-[60px]"> 
-                <img src="https://i.postimg.cc/HkqZfnMz/boss.png" 
-                     alt="logo" 
-                     class="absolute top-1/2 -translate-y-1/2 w-[60px] h-auto logo-#-filter max-w-none">
+        <nav class="fixed w-full z-50 glass-effect border-b border-gray-800 top-0">
+            <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+                <div class="flex items-center gap-3 h-10"> <div class="relative w-[150px]"> <img src="https://i.postimg.cc/HkqZfnMz/boss.png" 
+                    alt="logo">
+                    
+                    <div class="class="absolute top-1/2 -translate-y-1/2 w-[60px] h-auto logo-menu-filter max-w-none">
+                    </div>
+    
+                    <div class="ml-2"> <h1 class="font-oswald text-xl font-bold tracking-wider text-white leading-none">
+                        BOSS <span class="text-boss-gold">BARBEARIA</span>
+                    </h1>
+                    <p class="text-[10px] text-gray-400 tracking-[0.2em] mt-1">SOCIAL CLUB</p>
+                </div>
+            </div> 
+                
+                <div class="hidden md:flex items-center gap-6 text-sm">
+                    <a href="#inicio" class="hover:text-boss-gold transition-colors font-medium text-white">Início</a>
+                    <a href="#servicos" class="hover:text-boss-gold transition-colors font-medium text-white">Serviços</a>
+                    <a href="#agendamento" class="hover:text-boss-gold transition-colors font-medium text-white">Agendar</a>
+                    <a href="#equipe" class="hover:text-boss-gold transition-colors font-medium text-white">Equipe</a>
+                    <a href="#galeria" class="hover:text-boss-gold transition-colors font-medium text-white">Galeria</a>
+                    <a href="#contato" class="hover:text-boss-gold transition-colors font-medium text-white">Contato</a>
+                </div>
+    
+                <button onclick="toggleMenu()" class="md:hidden text-2xl text-boss-gold p-2 focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-
-            <div class="ml-2"> 
-                <h1 class="font-oswald text-xl font-bold tracking-wider text-white leading-none">
-                    BOSS <span class="text-boss-gold">BARBEARIA</span>
-                </h1>
-                <p class="text-[10px] text-gray-400 tracking-[0.2em] mt-1">SOCIAL CLUB</p>
-            </div>
-        </div> 
-
-        <div class="hidden md:flex items-center gap-6 text-sm">
-            <a href="#inicio" class="hover:text-boss-gold transition-colors font-medium text-white">Início</a>
-            <a href="#servicos" class="hover:text-boss-gold transition-colors font-medium text-white">Serviços</a>
-            <a href="#agendamento" class="hover:text-boss-gold transition-colors font-medium text-white">Agendar</a>
-            <a href="#equipe" class="hover:text-boss-gold transition-colors font-medium text-white">Equipe</a>
-            <a href="#galeria" class="hover:text-boss-gold transition-colors font-medium text-white">Galeria</a>
-            <a href="#contato" class="hover:text-boss-gold transition-colors font-medium text-white">Contato</a>
-        </div>
-
-        <button onclick="toggleMenu()" class="md:hidden text-2xl text-boss-gold p-2 focus:outline-none">
-            <i class="fas fa-bars"></i>
-        </button>
-    </div>
-
     
             <div id="mobile-menu" class="hidden md:hidden bg-boss-gray border-t border-gray-700 absolute w-full left-0">
                 <div class="flex flex-col p-4 gap-1">
