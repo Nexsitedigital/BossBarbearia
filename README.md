@@ -81,7 +81,7 @@
                 <div class="flex items-center gap-3 h-10"> <div class="relative w-[150px]"> <img src="https://i.postimg.cc/HkqZfnMz/boss.png" 
                     alt="logo">
                     
-                    <div class="class="absolute top-1/2 -translate-y-1/2 w-[60px] h-auto logo-menu-filter max-w-none">
+                <div class="class="absolute top-1/2 -translate-y-1/2 w-[60px] h-auto logo-menu-filter max-w-none">
                     </div>
     
                     <div class="ml-2"> <h1 class="font-oswald text-xl font-bold tracking-wider text-white leading-none">
