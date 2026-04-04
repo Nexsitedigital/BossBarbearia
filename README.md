@@ -80,8 +80,7 @@
             <div class="container mx-auto px-6 py-3 flex justify-between items-center">
                 <div class="flex items-center gap-3 h-10"> <div class="relative w-[150px]"> <img src="https://i.postimg.cc/HkqZfnMz/boss.png" 
                     alt="logo">
-                    </div>
-                       </div>
+                    
                     <div class="class="absolute top-1/2 -translate-y-1/2 w-[60px] h-auto logo-menu-filter max-w-none">
                     </div>
     
