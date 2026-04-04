@@ -82,7 +82,7 @@
     <div class="relative w-[60px]"> 
         <img src="https://i.postimg.cc/HkqZfnMz/boss.png" 
              alt="logo" 
-             class="absolute top-1/2 -translate-y-1/2 w-[60px] h-auto logo-filter max-w-none">
+             class="absolute top-1/2 -translate-y-1/2 w-[60px] h-auto logo-invisible-filter max-w-none">
     </div>
 
     <div class="ml-2"> 
