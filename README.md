@@ -101,7 +101,7 @@
             <button onclick="toggleMenu()" class="md:hidden text-2xl text-boss-gold p-2 focus:outline-none">
                 <i class="fas fa-bars"></i>
             </button>
-        </div>
+      
 
         <div id="mobile-menu" class="hidden md:hidden bg-boss-gray border-t border-gray-700 absolute w-full left-0">
             <div class="flex flex-col p-4 gap-1">
