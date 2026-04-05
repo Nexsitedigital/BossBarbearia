@@ -80,8 +80,10 @@
     <nav class="fixed w-full z-50 glass-effect border-b border-gray-800 top-0">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <div class="flex items-center gap-4">
-                <img src="https://i.postimg.cc/HkqZfnMz/boss.png" alt="Logo" class="h-12 w-auto">
-                <div class="hidden md:block">
+                <img src="https://i.postimg.cc/HkqZfnMz/boss.png" 
+     alt="Logo" 
+     class="h-12 w-auto" 
+     style="mix-blend-mode: screen;">
                     <h1 class="font-oswald text-xl font-bold tracking-wider text-white leading-none">BOSS <span class="text-boss-gold">BARBEARIA</span></h1>
                     <p class="text-[10px] text-gray-400 tracking-[0.2em] uppercase">Social Club</p>
                 </div>
